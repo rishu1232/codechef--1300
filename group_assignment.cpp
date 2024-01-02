@@ -11,8 +11,6 @@ int main() {
         int arr[n];
         for (int i = 0; i < n; i++)
             cin >> arr[i];
-
-        // Initialize hash array and set all elements to 0
         int maxElement = *max_element(arr, arr + n);
         int hash[maxElement + 1] = {0};
 
@@ -25,7 +23,7 @@ int main() {
         for (int i = 0; i < n; i++) {
             if (  hash[arr[i]] % arr[i] != 0) {
                 flag = false;
-                break; // Break out of the loop if flag is set to false
+                break; 
             }
             else if(arr[i]>hash[arr[i]]){
             	flag = false;
