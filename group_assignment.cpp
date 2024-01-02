@@ -23,7 +23,7 @@ int main() {
         bool flag = true;
 
         for (int i = 0; i < n; i++) {
-            if (arr[i] % hash[arr[i]] != 0) {
+            if (  hash[arr[i]] % arr[i] != 0) {
                 flag = false;
                 break; // Break out of the loop if flag is set to false
             }
